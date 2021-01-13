@@ -7,16 +7,17 @@ from 'qiankun';
 registerMicroApps(
   [
     {
-      name: 'react16',
-      entry: '//localhost:7777',
-      container: '#container1',
+      name: 'time',
+      entry: '//localhost:7100/dboard-time/',
+      container: '#time',
       // loader,
       activeRule: '/react16',
-    },
+    }
+    ,
     {
-      name: 'react161`',
+      name: 'wallpaper`',
       entry: '//localhost:7777',
-      container: '#container2',
+      container: '#wallpaper',
       // loader,
       activeRule: '/react16',
     },

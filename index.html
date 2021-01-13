@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QianKun Example</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>QianKun Example</title>
-</head>
-
-<body>
-  <div class="mainapp">
-    <!-- 标题栏 -->
-    <header class="mainapp-header">
-      <h1>QianKun</h1>
-    </header>
-    <div class="mainapp-main">
-      <main id="subapp-container">
-        <div id="container1"></div>
-        <div id="container2"></div>
-      </main>
+  <body>
+    <div id="wallpaper"></div>
+    <div
+      class="p-4 grid gap-4 grid-cols-3 bg-fuchsia-300 bg-stripes bg-stripes-white h-screen"
+    >
+      <div class="bg-fuchsia-400">
+        <div id="time"></div>
+      </div>
+      <div class="bg-fuchsia-500"></div>
+      <div class="bg-fuchsia-400"></div>
+      <div class="bg-fuchsia-500"></div>
+      <div class="bg-fuchsia-400"></div>
+      <div class="bg-fuchsia-500"></div>
+      <div class="bg-fuchsia-400"></div>
+      <div class="bg-fuchsia-500"></div>
+      <div class="bg-fuchsia-400"></div>
     </div>
-  </div>
 
-  <script>
-    function push(subapp) { history.pushState(null, subapp, subapp) }
-  </script>
-</body>
-
+    <!-- <div id="container2"></div> -->
+    <script>
+      function push(subapp) {
+        history.pushState(null, subapp, subapp);
+      }
+    </script>
+  </body>
 </html>
